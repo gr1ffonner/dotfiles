@@ -1,0 +1,34 @@
+import = ["/home/danya/.config/alacritty/colors.toml", "/home/danya/.config/alacritty/fonts.toml"]
+live_config_reload = true
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 0.8
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 82
+lines = 24
+
+[window.padding]
+x = 12
+y = 12
+
+[shell]
+program = "tmux"
+  args = ["new-session", "-A", "-s", "startup"]
+
+
+
